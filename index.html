@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Recognition Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--<link rel="stylesheet" href="trynoww.css">-->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="animation-container">
+            <video autoplay loop muted>
+                <source src="vid.mp4" type="video/mp4">
+            </video>
+            <div class="overlay-text">
+                <h2><span id="dynamic-text">Speech </span></h2>
+                <br>
+                <p>"Experience the future of communication with our Speech Recognition Project.</p>
+                <p>Try now and witness the power of voice-driven interactions revolutionizing "</p>
+                <p>"The way we interact with technology."</p>
+                <button id="try-now-button">Try Now..</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script> <!-- Include your JavaScript file -->
+    <script src="trynowj.js"></script> <!-- Include your JavaScript file -->
+    <script>
+        // Function to handle button click event and open the popup
+        document.getElementById("try-now-button").addEventListener("click", function () {
+            window.open("trynow.html", "Try Now Popup", "width=400,height=300");
+        });
+    </script>
+</body>
+
+</html>
